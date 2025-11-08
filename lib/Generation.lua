@@ -1,4 +1,4 @@
-{{ ... }}
+local Generation = {}
 
 type table = {
 	[any]: any
@@ -11,7 +11,7 @@ local ParserModule = loadstring(game:HttpGet('https://raw.githubusercontent.com/
 function ParserModule:Import(Name: string)
 	local Url = `{self.ImportUrl}/{Name}.lua`
 	return loadstring(game:HttpGet(Url))()
-{{ ... }}
+end
 ParserModule:Load()
 
 --// Modules
