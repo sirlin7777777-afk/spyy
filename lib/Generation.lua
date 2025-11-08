@@ -5,7 +5,13 @@ type table = {
 }
 
 --// Libraries
-local ParserModule = loadstring(game:HttpGet('https://raw.githubusercontent.com/depthso/Roblox-parser/refs/heads/main/dist/Main.luau'))()
+local success, ParserModule = pcall(function()
+	return loadstring(game:HttpGet('https://raw.githubusercontent.com/depthso/Roblox-parser/refs/heads/main/dist/Main.luau'))()
+end)
+
+if not success then
+	error("Failed to load Roblox-parser library: " .. tostring(ParserModule))
+end
 
 --// Parser
 function ParserModule:Import(Name: string)
