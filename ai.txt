@@ -1,0 +1,5 @@
+https://api.orcarouter.ai/v1
+sk-orca-ovEovxB66QFL4I0z5mtxXWRf1IePwd5AzqgQMsA2smY
+"id": "deepseek/deepseek-v4.1-flash",
+				"name": "cat",
+				"url": "https://api.orcarouter.ai/v1",
